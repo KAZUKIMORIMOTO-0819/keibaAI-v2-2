@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+tqdm
+beautifulsoup4
+requests
+dill
+selenium >= 4.0.0
+scikit-learn
+lightgbm
+optuna
+jupyterlab
+ipywidgets
+webdriver-manager

@@ -1,0 +1,15 @@
+# docker-compose up -d
+# 
+version: '3'
+services:
+  temp:
+    build: .
+    working_dir: /tmp/work
+    volumes:
+      - ./:/tmp/work
+    ports:
+      - "8090:8888"
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    command:
+      jupyter-lab --ip 0.0.0.0 --allow-root --no-browser 
